@@ -26,7 +26,8 @@ func readWordlist(path string) ([]string, error) {
 	return wordlistLines, scanner.Err()	
 }
 
-func Finddir(wordlistPath string, urlbase string) error { 
+func Finddir(wordlistPath string, urlbase string) error {
+	fmt.Println("Running...")
 	wordlist, err := readWordlist(wordlistPath)
 
 	if err != nil {
