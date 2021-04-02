@@ -16,7 +16,7 @@ func main(){
 	args := os.Args[1:]
 
 	if args[0] == "w" {
-		wordlistPath = "../finddir/wordlist/medium.txt"
+		wordlistPath = "medium.txt"
 
 	} else {
 		wordlistPath = args[0]
