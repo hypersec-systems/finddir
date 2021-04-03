@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+
 func main(){
 	banner()
 
@@ -15,16 +16,19 @@ func main(){
 
 	args := os.Args[1:]
 
-	if args[0] == "w" {
-		wordlistPath = "medium.txt"
+	if args[0] == "" {
+		fmt.Println("\033[1;93mWithout a wordlist!!!")
+		fmt.Println("Please set a wordlits path!!!")
+		fmt.Println("ex: /usr/share/wordlists/rockyou.txt\033[0;0m")
 
 	} else {
 		wordlistPath = args[0]
 	}
 
 	if args[1] == "" {
-		fmt.Println("Without a url!!!")
-		fmt.Println("ex: http://exemple.com/")
+		fmt.Println("\033[1;93mWithout a url!!!")
+		fmt.Println("Please set a url")
+		fmt.Println("ex: http://exemple.com/\033[0;0m")
 
 	} else {
 		urlBase = args[1]

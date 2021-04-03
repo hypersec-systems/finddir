@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+
 func readWordlist(path string) ([]string, error) {
 	wordlistFile, err := os.Open(path)
 
@@ -26,8 +27,32 @@ func readWordlist(path string) ([]string, error) {
 	return wordlistLines, scanner.Err()	
 }
 
+
+func writeFile(urls []string) error {
+	file, err := os.Create("urlsFound.txt")
+	
+	if err != nil {
+		return err
+	}
+
+	defer file.Close()
+
+	for _, url := range(urls){
+		_, err := file.WriteString(url + "\n")
+	
+		if err != nil {
+			return err
+		}
+	}
+
+	return nil
+}
+
+
 func Finddir(wordlistPath string, urlbase string) error {
-	fmt.Println("Running...")
+	fmt.Println("\u001b[32;1mRunning...\u001b[0m")
+
+	var urls []string
 	wordlist, err := readWordlist(wordlistPath)
 
 	if err != nil {
@@ -43,11 +68,19 @@ func Finddir(wordlistPath string, urlbase string) error {
 		}
 
 		if resp.StatusCode == 200 {
-			fmt.Printf("directory found ==> %s | status code %d\n", url, resp.StatusCode)
-	
+			fmt.Printf("\u001b[36;1m[*] Directory found ==> %s status code %d\u001b[0m\n", url, resp.StatusCode)
+			urls = append(urls, url) 
 		}
 	}
 	
-	fmt.Println("Done...")
+
+	err = writeFile(urls)
+
+	if err != nil {
+		return err
+	}
+	
+	fmt.Println("\u001b[32;1mDone...\u001b[0m")
 	return nil
 }
+
