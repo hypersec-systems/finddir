@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## FINDDIR
 
 You can use the [editor on GitHub](https://github.com/gustavors22/finddir/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
