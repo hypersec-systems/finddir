@@ -10,6 +10,8 @@ Finddir is a golang hacking tool to designed to brute force directories and file
     <p>linux</p>
   </a>
 
-* execute in tool path: ./finddir "wordlists/<choose a wordlist>" "http://www.exemple.com/"
+* execute in tool path: 
+  * Linux: ./finddir "wordlists/<choose a wordlist>" "http://www.exemple.com/"
+  * Windows: finddir.exe "wordlists/<choose a wordlist>" "http://www.exemple.com/"
 <img src="https://drive.google.com/uc?export=view&id=1BzFc1FAAZHEflIdZ5rQyAfZadRm0sYvm">
 
