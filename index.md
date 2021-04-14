@@ -6,10 +6,10 @@ Finddir is a golang hacking tool to designed to brute force directories and file
 
 * Download the tool end unpacking
   <br>
-  <a href="https://github.com/gustavors22/finddir/releases/download/v0.1/finddir-windows.zip">
+  <a href="https://github.com/net-watch-sec/finddir/releases/download/v0.1/finddir-windows.zip">
     <img src="https://cdn1.iconfinder.com/data/icons/operating-system-flat-1/30/windows_7-512.png" weight="50" height="50">
   </a>
-  <a href="https://github.com/gustavors22/finddir/releases/download/v0.1/finddir-linux.zip">
+  <a href="https://github.com/net-watch-sec/finddir/releases/download/v0.1/finddir-linux.zip">
     <img src="https://cdn1.iconfinder.com/data/icons/operating-system-flat-1/30/linux-512.png" weight="50" height="50">
   </a>
 
