@@ -1,6 +1,6 @@
 # FINDDIR
 
-Finddir is a golang hacking tool to designed to brute force directories and files names on web/application servers.https://net-watch-sec.github.io/finddir/
+Finddir is a golang hacking tool to designed to brute force directories and files names on web/application servers.
 
 <a href="https://net-watch-sec.github.io/finddir/">Website</a>
 
